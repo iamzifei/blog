@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>bouilli.markdown</string>
+		</array>
+		<array>
+			<string>europe-trip-visa.md</string>
+		</array>
+		<array>
+			<string>hello-2015.markdown</string>
+		</array>
+		<array>
+			<string>hello-world.markdown</string>
+		</array>
+		<array>
+			<string>how-to-maintain-your-garden-chapter-1.markdown</string>
+		</array>
+		<array>
+			<string>lazy-again.markdown</string>
+		</array>
+		<array>
+			<string>new-theme.markdown</string>
+		</array>
+		<array>
+			<string>new-toothbrush.markdown</string>
+		</array>
+		<array>
+			<string>parent-back-to-china.markdown</string>
+		</array>
+		<array>
+			<string>pool-maintenance-advance.markdown</string>
+		</array>
+		<array>
+			<string>pool-maintenance.markdown</string>
+		</array>
+		<array>
+			<string>some-thoughts-about-o2o-and-internet-of-things.markdown</string>
+		</array>
+		<array>
+			<string>willpower.markdown</string>
+		</array>
+		<array>
+			<string>workout.markdown</string>
+		</array>
+		<array>
+			<string>europe-trip-frankfurt.md</string>
+		</array>
+		<array>
+			<string>europe-trip-cologne.md</string>
+		</array>
+	</array>
+</dict>
+</plist>
