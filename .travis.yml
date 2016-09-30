@@ -1,37 +1,26 @@
 language: node_js
 node_js: stable
-
-# Travis-CI Caching
 cache:
   directories:
-    - node_modules
-
-
-# S: Build Lifecycle
+  - node_modules
 install:
-  - npm install
-
-# before_script:
-  # - npm install -g gulp
-
+- npm install
+before_script:
+- npm install -g gulp
 script:
-  - hexo generate
-
+- hexo generate
 after_script:
-  - cd public
-  - git init
-  - git config user.name "iamzifei"
-  - git config user.email "iamzifei@gmail.com"
-  - git add .
-  - git commit -m "Update docs"
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
-# E: Build LifeCycle
-
+- cd ./public
+- git init
+- git config user.name "iamzifei"
+- git config user.email "iamzifei@gmail.com"
+- git add .
+- git commit -m "Update docs"
+- git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
 branches:
   only:
-    - master
+  - master
 env:
- global:
-   - GH_REF: github.com/iamzifei/blog.git
-   - GH_TOKEN:
-     - secure: "sAIJK5CCHIJfilvOc5QwDCcbhCcDkkoKoanwL0/FNdDqLxnoqfQLcnHMuLcJqltAhqf3R+JgPYWxQKV3d3qcKuM+hT6RzP5H+rvXnXBvp+2jby1aiZV2FRJorTVmtes9s4ZbECb2jtDx+fWBrvqc2+DR4MqrVLWS+UmCEfMoU7UGSRdfx9OUkffQyt9iDPmv9AULwym62lrr+BlfNBQ8AfnN2JV5l8Qo3awPulC2awLu2WADDrR2jftJcJBdEGgWvnxSuvZatWuZrhf88+buR1NdCa40F+3VS3zrcCWHzvvDadFDn02ojUtupWsJhr5crCw682T4dyo3J+0LjJpM99mw6A75mKzq9gYVMpEVADQI2bG/T+Tdin6xE+zpyKdt6CtFyzSQJOaQU4UO2kKI4FCGkfvdeN3iITTfTPX80M/K53iS/cQNvxNSDppcDnNsoQoy0IXmZ8WINX7c53Vgc0gJVvPrvuCRjTzghd3m4JQR1IKMmpPX2Ju2qDMTEH+37GfuKqmZe4FnpvuxtqVjI6QALlb7zaF4AA/HXfxTHFmLZMKkO2NUU/kNNhFxIB6zZ6ObrqT4G2lobpgO5/UF8+q6AQ+UGL7Y+y+w3xX9igjsjqftyktcvZczS0RoWsUEYo04mIHiUQzCI6LCBnWsRuXkiMqZVwHRvEhMwnlT2RM="
+  global:
+  - GH_REF: github.com/iamzifei/blog.git
+  - secure: 2FpeoXWkXsO3bxyw14ujP2vP3JpXsCEJAitqGpMh/RLUQu7zhLB0ETXAYr4V1EhNu0rzcTnz1+p1ROF5HJiT2vqIx2yNMo8PKsde4QEkNwc058SprTd7bVBFPVJIIfQVtupA2iDfJ3zBER9+p32WHbvi0GhCR5nX5bB5rFaC77mQj0fNxNJaq/d3SbLeWF0aAFh4Jfjuwc+EjtfuUednVnuJYvYXoWUCmiC8BO0zdQC94LWXtXJ8QHitobhCbz79WAyP3YbP8HTAXtTC57Jcc649Ppa8h3EAOTwFfx8C9DDjd5cFjyQoQO8LxrJ0K6SA73m5QRSA5F2dLWHndmq8xzTY2X3lbPXHKj8C95ah/Z3sa6zHjZ7rNf9xNZHs5qgAqAnL8k1LC1bh6WIn7hTPwBMKlZyjJ69KwE5BnKVSI4xzG+Ll7JbCDnshDDJACGxby/jf64jBCpcGP1pdKGk96RhD+4LbZU1SqJUANdVGAB9roqBSK3cenuakb0+JCCOPnSx9wvu+i1aLaoWxUMiqC9BhYhej1HkdI08ejtrYM6/MzdBJhnl7WB8BiTz93VWGv4F/Ao28O0VDk71EB85tp4j4I/cEICHbTVdX5fO3BMTLw+ZgG9+g7e6Z9p0Kmn7cxMPQcUC7mtWUjotrBoYWu8HaAi/Wvwnz3SrLPIRlH4M=
