@@ -5,7 +5,7 @@
 # Site
 title: ZG in the House
 subtitle: 我的流水账
-description:
+description: 我的流水账
 author: James Gong
 language: zh-Hans
 timezone:
@@ -40,6 +40,7 @@ future: true
 highlight:
   enable: true
   line_number: true
+  auto_detect: false
   tab_replace:
 
 # Category & Tag
@@ -64,8 +65,26 @@ pagination_dir: page
 ## Themes: http://hexo.io/themes/
 theme: next
 
+index_generator:
+  per_page: 5
+
+archive_generator:
+  per_page: 20
+  yearly: true
+  monthly: true
+
+tag_generator:
+  per_page: 10
+
+# hexo sitemap网站地图
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
+
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: git@github.com:iamzifei/blog.git
+  type:
+  # repo: git@github.com:iamzifei/blog.git

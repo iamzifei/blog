@@ -3,9 +3,14 @@ author: James
 comments: true
 layout: post
 title: O2O, 你要做哪个O？IoT，你做I还是T？
+date: 2015-03-30 02:20:48
 categories:
 - IT
 - Start-up
+tags:
+- IT
+- Start-up
+- 创业
 ---
 ![Online to Offline](/images/2015/05/OfflineVSonline.jpg)
 * 遍地的纪念品店，里面的客人问的多买的少，你觉得能赚多少钱？
